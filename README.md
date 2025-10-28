@@ -17,3 +17,27 @@ It ensures that *e* is relatively prime to *φ(n)* and computes *d = e⁻¹ mod 
 ```bash
 make
 ./rsa_keygen
+
+
+Follow on screen prompts:
+Enter prime p: 61
+Enter prime q: 53
+Selected e: 17
+Computed d: 2753
+Public Key: (e = 17, n = 3233)
+Private Key: (d = 2753, n = 3233)
+
+
+
+Files
+Makefile          - compile/run script
+rsa_keygen.cpp    - main program for key generation
+modinv.cpp/.h     - multiplicative inverse routine
+utils.hpp         - helper functions
+primes.txt        - optional list of primes
+
+Author
+
+Rashil Shibakoti
+Course: CSC 487 – Network Security
+South Dakota State University
